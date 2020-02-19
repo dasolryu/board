@@ -1,0 +1,7 @@
+body	/Users/dasolryu/Documents/workspace/board/public/css/master.css	/^body {$/;"	function	line:3
+.breadcrumb-item	/Users/dasolryu/Documents/workspace/board/public/css/master.css	/^ .breadcrumb-item{$/;"	function	line:6
+.ellipsis	/Users/dasolryu/Documents/workspace/board/public/css/master.css	/^ .ellipsis{$/;"	function	line:9
+.board-table	/Users/dasolryu/Documents/workspace/board/public/css/master.css	/^ .board-table{$/;"	function	line:17
+.baord-table .date	/Users/dasolryu/Documents/workspace/board/public/css/master.css	/^ .baord-table .date{$/;"	function	line:21
+.post-body	/Users/dasolryu/Documents/workspace/board/public/css/master.css	/^ .post-body{$/;"	function	line:25
+.post-info	/Users/dasolryu/Documents/workspace/board/public/css/master.css	/^ .post-info{$/;"	function	line:28

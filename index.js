@@ -10,13 +10,13 @@ mongoose.set('useNewUrlParser', true);
 mongoose.set('useFindAndModify', false);
 mongoose.set('useCreateIndex', true);
 mongoose.set('useUnifiedTopology', true);
-mongoose.connect(process.env.MONGO_DB);
+mongoose.connect(process.env.MONGO_PATH);
 var db = (mongoose.connection);
 db.once('open', function(){
   console.log('DB connected');
 });
 db.on('error', function(){
-  console.log('DB ERROR', err);
+  console.log('DB ERROR: ', err);
 });
 
 //OTHER SETTINGS
@@ -28,6 +28,7 @@ app.use(methodOverride('_method'));
 
 //ROUTES
 app.use('/', require('./routes/home'));
+app.use('/posts', require('./routes/posts'));
 
 //PORT SETTING
 var port=3000;
