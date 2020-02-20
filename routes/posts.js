@@ -14,17 +14,17 @@ router.get('/', function(req, res){
   });
 });
 
+// New
+router.get('/new', function(req, res){
+  res.render('posts/new');
+});
+
 // create
 router.post('/', function(req, res){
   Post.create(req.body, function(err, post){
     if(err) return res.json(err);
     res.redirect('/posts');
   });
-});
-
-// New
-router.get('/new', function(req, res){
-  res.render('posts/new');
 });
 
 // show
