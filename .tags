@@ -18,6 +18,9 @@ port	/Users/dasolryu/Documents/workspace/board/index.js	/^var port=3000;$/;"	var
 express	/Users/dasolryu/Documents/workspace/board/routes/users.js	/^var express  = require('express');$/;"	variable	line:3
 router	/Users/dasolryu/Documents/workspace/board/routes/users.js	/^var router = express.Router();$/;"	variable	line:4
 User	/Users/dasolryu/Documents/workspace/board/routes/users.js	/^var User = require('..\/models\/User');$/;"	variable	line:5
-mongoose	/Users/dasolryu/Documents/workspace/board/models/User.js	/^var mongoose = require('mongoose');$/;"	variable	line:3
-userSchema	/Users/dasolryu/Documents/workspace/board/models/User.js	/^var userSchema = mongoose.Schema({$/;"	variable	line:6
-User	/Users/dasolryu/Documents/workspace/board/models/User.js	/^var User = mongoose.model('user',userSchema);$/;"	variable	line:62
+mongoose	/Users/dasolryu/Documents/workspace/board/models/User.js	/^var mongoose = require('mongoose');$/;"	variable	line:1
+bcrypt	/Users/dasolryu/Documents/workspace/board/models/User.js	/^var bcrypt = require('bcryptjs');$/;"	variable	line:2
+userSchema	/Users/dasolryu/Documents/workspace/board/models/User.js	/^var userSchema = mongoose.Schema({$/;"	variable	line:4
+authenticate	/Users/dasolryu/Documents/workspace/board/models/User.js	/^userSchema.methods.authenticate = function (password) {$/;"	function	line:62
+userSchema.methods.authenticate	/Users/dasolryu/Documents/workspace/board/models/User.js	/^});$/;"	function	line:60
+User	/Users/dasolryu/Documents/workspace/board/models/User.js	/^var User = mongoose.model('user',userSchema);$/;"	variable	line:67

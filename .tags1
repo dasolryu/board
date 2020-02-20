@@ -4,3 +4,9 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
+mongoose	/Users/dasolryu/Documents/workspace/board/models/User.js	/^var mongoose = require('mongoose');$/;"	variable	line:1
+bcrypt	/Users/dasolryu/Documents/workspace/board/models/User.js	/^var bcrypt = require('bcryptjs');$/;"	variable	line:2
+userSchema	/Users/dasolryu/Documents/workspace/board/models/User.js	/^var userSchema = mongoose.Schema({$/;"	variable	line:4
+authenticate	/Users/dasolryu/Documents/workspace/board/models/User.js	/^userSchema.methods.authenticate = function (password) {$/;"	function	line:62
+userSchema.methods.authenticate	/Users/dasolryu/Documents/workspace/board/models/User.js	/^});$/;"	function	line:60
+User	/Users/dasolryu/Documents/workspace/board/models/User.js	/^var User = mongoose.model('user',userSchema);$/;"	variable	line:67
