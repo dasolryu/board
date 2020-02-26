@@ -13,14 +13,21 @@ express	/Users/dasolryu/Documents/workspace/board/index.js	/^var express = requi
 mongoose	/Users/dasolryu/Documents/workspace/board/index.js	/^var mongoose = require('mongoose');$/;"	variable	line:3
 bodyParser	/Users/dasolryu/Documents/workspace/board/index.js	/^var bodyParser = require('body-parser');$/;"	variable	line:4
 methodOverride	/Users/dasolryu/Documents/workspace/board/index.js	/^var methodOverride = require('method-override');$/;"	variable	line:5
-app	/Users/dasolryu/Documents/workspace/board/index.js	/^var app = express();$/;"	variable	line:6
-port	/Users/dasolryu/Documents/workspace/board/index.js	/^var port=3000;$/;"	variable	line:35
+flash	/Users/dasolryu/Documents/workspace/board/index.js	/^var flash = require('connect-flash');$/;"	variable	line:6
+session	/Users/dasolryu/Documents/workspace/board/index.js	/^var session = require('express-session');$/;"	variable	line:7
+app	/Users/dasolryu/Documents/workspace/board/index.js	/^var app = express();$/;"	variable	line:8
+port	/Users/dasolryu/Documents/workspace/board/index.js	/^var port=3000;$/;"	variable	line:39
+mongoose	/Users/dasolryu/Documents/workspace/board/models/User.js	/^var mongoose = require('mongoose');$/;"	variable	line:1
+bcrypt	/Users/dasolryu/Documents/workspace/board/models/User.js	/^var bcrypt = require('bcryptjs');$/;"	variable	line:2
+userSchema	/Users/dasolryu/Documents/workspace/board/models/User.js	/^var userSchema = mongoose.Schema({$/;"	variable	line:5
+passwordRegexErrorMessage	/Users/dasolryu/Documents/workspace/board/models/User.js	/^var passwordRegexErrorMessage = 'Should be minimum 8 characters of alphabet and number combination!';$/;"	variable	line:49
+authenticate	/Users/dasolryu/Documents/workspace/board/models/User.js	/^userSchema.methods.authenticate = function (password) {$/;"	function	line:98
+userSchema.methods.authenticate	/Users/dasolryu/Documents/workspace/board/models/User.js	/^});$/;"	function	line:95
+User	/Users/dasolryu/Documents/workspace/board/models/User.js	/^var User = mongoose.model('user',userSchema);$/;"	variable	line:104
 express	/Users/dasolryu/Documents/workspace/board/routes/users.js	/^var express  = require('express');$/;"	variable	line:3
 router	/Users/dasolryu/Documents/workspace/board/routes/users.js	/^var router = express.Router();$/;"	variable	line:4
 User	/Users/dasolryu/Documents/workspace/board/routes/users.js	/^var User = require('..\/models\/User');$/;"	variable	line:5
-mongoose	/Users/dasolryu/Documents/workspace/board/models/User.js	/^var mongoose = require('mongoose');$/;"	variable	line:1
-bcrypt	/Users/dasolryu/Documents/workspace/board/models/User.js	/^var bcrypt = require('bcryptjs');$/;"	variable	line:2
-userSchema	/Users/dasolryu/Documents/workspace/board/models/User.js	/^var userSchema = mongoose.Schema({$/;"	variable	line:4
-authenticate	/Users/dasolryu/Documents/workspace/board/models/User.js	/^userSchema.methods.authenticate = function (password) {$/;"	function	line:62
-userSchema.methods.authenticate	/Users/dasolryu/Documents/workspace/board/models/User.js	/^});$/;"	function	line:60
-User	/Users/dasolryu/Documents/workspace/board/models/User.js	/^var User = mongoose.model('user',userSchema);$/;"	variable	line:67
+parseError	/Users/dasolryu/Documents/workspace/board/routes/users.js	/^function parseError(errors){$/;"	function	line:96
+parsed.message	/Users/dasolryu/Documents/workspace/board/routes/users.js	/^      parsed[name] = { message:validationError.message };$/;"	property	line:101
+parsed.username.message	/Users/dasolryu/Documents/workspace/board/routes/users.js	/^    parsed.username = { message:'This username already exists!' };$/;"	property	line:105
+parseError	/Users/dasolryu/Documents/workspace/board/routes/users.js	/^function parseError(errors){$/;"	function	line:96
