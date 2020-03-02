@@ -4,7 +4,7 @@ var express = require('express');
 var router = express.Router();
 var passport = require('../config/passport');
 
-//home
+//Home
 router.get('/', function(req,res){
   res.render('home/welcome');
 });
@@ -12,6 +12,7 @@ router.get('/about', function(req,res){
   res.render('home/about');
 });
 
+//Login
 router.get('/login', function(req,res){
   var username = req.flash('username')[0];
   var errors = req.flash('errors')[0] || {};
@@ -21,6 +22,7 @@ router.get('/login', function(req,res){
   });
 });
 
+// Post Login
 router.post('/login',
   function(req,res,next){
     var errors = {};
@@ -37,9 +39,9 @@ router.post('/login',
     }
     if(isValid){
       next();
-    }else
-    {req.flash('errors',errors);
-    res.redirect('/login');
+    }else{
+      req.flash('errors',errors);
+      res.redirect('/login');
     }
   },
   passport.authenticate('local-login', {

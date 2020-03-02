@@ -3,32 +3,31 @@
 body {
   font-family: 'Open Sans', sans-serif;
 }
- .breadcrumb-item{
-   font-size: 0.8em !important;
- }
- .ellipsis{
-   display: block;
-   width:100%;
-   white-space: nowrap;
-   overflow: hidden;
-   text-overflow: ellipsis;
- }
+.breadcrumb-item{
+ font-size: 0.8em !important;
+}
+.board-table{
+ table-layout: fixed;
+}
+.board-table .author,
+.board-table .date{
+ width: 100px;
+}
 
- .board-table{
-   table-layout: fixed;
+.ellipsis{
+ display: block;
+ width:100%;
+ white-space: nowrap;
+ overflow: hidden;
+ text-overflow: ellipsis;
+}
 
- }
- .baord-table .date{
-   width: 100px;
- }
-
- .post-body{
-   white-space: pre-line;
- }
- .post-info{
-   font-size: 0.8em;
- }
-
+.post-body{
+ white-space: pre-line;
+}
+.post-info{
+ font-size: 0.8em;
+}
 .user-form{
-  width: 400px;
+width: 400px;
 }
